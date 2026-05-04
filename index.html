@@ -88,7 +88,15 @@ function addItem() {
 
   input.value = "";
 }
+
+// Enterキー対応
+document.getElementById("newItem").addEventListener("keydown", function(e) {
+  if (e.key === "Enter") {
+    addItem();
+  }
+});
 </script>
+
 
 </body>
 </html>
